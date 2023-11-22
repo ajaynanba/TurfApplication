@@ -14,22 +14,30 @@
   "attributes": {
     "Date": {
       "type": "date",
-      "unique": true,
+      "unique": false,
       "required": true
     },
-    "user": {
+    "timeslots": {
+      "type": "enumeration",
+      "enum": [
+        "A5:00AM",
+        "B6:00AM",
+        "C7:00AM",
+        "D 8:00PM",
+        "E9:00 PM",
+        "F10:00 PM",
+        "G11:00AM"
+      ],
+      "required": true
+    },
+    "users_permissions_user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "bookings"
     },
-    "StartTime": {
-      "type": "time"
-    },
-    "EndTime": {
-      "type": "time",
-      "unique": true,
-      "required": true
+    "stripeId": {
+      "type": "biginteger"
     }
   }
 }

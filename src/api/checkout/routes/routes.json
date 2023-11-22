@@ -1,0 +1,13 @@
+{
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/checkouts",
+        "handler": "checkout.find",
+        "config": {
+          "policies": []
+        }
+      }
+    ]
+  }
+  

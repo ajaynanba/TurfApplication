@@ -1,10 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "public_users",
+  "collectionName": "checkouts",
   "info": {
-    "singularName": "public-user",
-    "pluralName": "public-users",
-    "displayName": "public user"
+    "singularName": "checkout",
+    "pluralName": "checkouts",
+    "displayName": "checkout",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,8 +15,8 @@
     "name": {
       "type": "string"
     },
-    "emailId": {
-      "type": "email"
+    "stripeId": {
+      "type": "string"
     }
   }
 }

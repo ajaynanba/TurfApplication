@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * public-user service
+ * event service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::public-user.public-user');
+module.exports = createCoreService('api::event.event');

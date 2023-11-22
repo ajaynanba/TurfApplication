@@ -69,8 +69,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::booking.booking",
-      "private": true,
-      "mappedBy": "user"
+      "mappedBy": "users_permissions_user"
     }
   }
 }
